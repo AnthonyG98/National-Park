@@ -55,6 +55,7 @@ function App() {
           allEl.map((el) => {
             return (
               <Images
+                id={el.id}
                 heading={el.fullName}
                 img={el.images[0].url}
                 desc={el.description}

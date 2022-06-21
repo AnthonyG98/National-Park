@@ -105,6 +105,22 @@ input {
   color: rgb(68, 169, 252);
   display: none;
 }
+.modal-btn {
+       background-color: rgb(68, 169, 252);
+       border: 2px solid rgb(68, 169, 252);
+       font-size: 1.5em;
+       color: #fff;
+       border-radius: 5px;
+       padding: 5px;
+       transition: 0.3s ease;
+}
+.modal-btn:hover {
+       background-color: transparent;
+       border: 2px solid rgb(104, 194, 139);
+       cursor: pointer;
+       transition: 0.3s ease;
+       color: rgb(104, 194, 139);
+}
 .footer-container {
   background-color: #111;
   color: #fff;
@@ -142,5 +158,23 @@ input {
     background-position: center;
     background-size: cover;
     padding: 0 !important;
+  }
+  .footer-text {
+    width: 95%;
+    font-size: 0.5em;
+  }
+  input {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .home-container button {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
