@@ -7,8 +7,12 @@ function Images(props) {
         `https://developer.nps.gov/api/v1/parks?parkCode=${parkId}&api_key=lF66DX3RdHNuTi9sJPeeP76tfvjChRv0uICHEK5s`
       )
       .then((response) => {
-        console.log(response);
-        console.log(parkId);
+        const arrayofParks = response.data.data;
+        const filterByParkId = arrayofParks.filter((el) => {
+          return el.id === props.id;
+        });
+
+        console.log(filterByParkId);
       });
   };
   return (
