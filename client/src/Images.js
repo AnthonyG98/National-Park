@@ -8,6 +8,7 @@ function Images(props) {
       )
       .then((response) => {
         console.log(response);
+        console.log(parkId);
       });
   };
   return (
@@ -17,7 +18,12 @@ function Images(props) {
           <h1>{props.heading}</h1>
           <p>{props.desc}</p>
           <p>Location: {props.location}</p>
-          <button className="modal-btn" onClick={openModal(props.id)}>
+          <button
+            className="modal-btn"
+            onClick={() => {
+              openModal(props.id);
+            }}
+          >
             Learn More
           </button>
         </div>
